@@ -1,10 +1,20 @@
 ---
-import { SITE_TITLE } from "../consts";
+import LinkNav from "./LinkNav.astro";
 ---
 
 <header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>links</nav>
+	<nav class="flex justify-between">
+		<LinkNav href="/" img_src="favicon-32x32.png" />
+		<ul class="flex space-x-2">
+			<li>
+				<LinkNav href="/" img_src="github-142-svgrepo-com.svg" />
+			</li>
+			<li>
+				<LinkNav href="/" img_src="github-142-svgrepo-com.svg" />
+			</li>
+			<li>
+				<LinkNav href="/" img_src="linkedin-round-svgrepo-com.svg" />
+			</li>
+		</ul>
+	</nav>
 </header>
