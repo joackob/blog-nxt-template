@@ -6,12 +6,9 @@ export interface Props {
 const { date } = Astro.props;
 ---
 
-<time datetime={date.toISOString()}>
-	{
-		date.toLocaleDateString('en-us', {
-			year: 'numeric',
-			month: 'short',
-			day: 'numeric',
-		})
-	}
-</time>
+<div class="my-4 text-gray-400">
+	Publicado el
+	<time datetime={date.toISOString()}>
+		{date.toLocaleDateString()}
+	</time>
+</div>

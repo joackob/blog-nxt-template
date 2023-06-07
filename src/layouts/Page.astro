@@ -4,17 +4,27 @@ import Header from "../components/Header.astro";
 import Profile from "../components/HeroProfile.astro";
 import Nav from "../components/Nav.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+export interface Props {
+    title?: string;
+    description?: string;
+}
+
+const { title = SITE_TITLE, description = SITE_DESCRIPTION }: Props =
+    Astro.props;
 ---
 
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+        <BaseHead title={title} description={description} />
     </head>
-    <body class="bg-primary text-secondary font-serif mx-4">
-        <Header title={SITE_TITLE} />
-        <Profile />
-        <Nav />
-        <slot />
+    <body class="bg-primary text-secondary font-sans mx-4">
+        <main>
+            <Header title={title} />
+            <Profile />
+            <Nav />
+            <slot />
+        </main>
     </body>
 </html>
