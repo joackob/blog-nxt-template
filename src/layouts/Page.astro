@@ -1,6 +1,8 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
+import Profile from "../components/HeroProfile.astro";
+import Nav from "../components/Nav.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 ---
 
@@ -9,8 +11,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <head>
         <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     </head>
-    <body class="bg-primary text-secondary font-serif">
+    <body class="bg-primary text-secondary font-serif mx-4">
         <Header title={SITE_TITLE} />
+        <Profile />
+        <Nav />
         <slot />
     </body>
 </html>
