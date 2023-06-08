@@ -6,3 +6,94 @@
 body {
   font-family: Verdana, sans-serif;
 }
+
+/* for markdown styles */
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  font-weight: bold;
+  margin: 1rem 0 1rem 0;
+}
+
+article h1 {
+  font-size: 1.875rem; /* 30px */
+  line-height: 2.25rem; /* 36px */
+}
+
+article h2 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 2rem; /* 32px */
+}
+
+article h3 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
+
+article h4 {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+}
+
+article h5 {
+  font-size: 1rem; /* 16px */
+  line-height: 1.5rem; /* 24px */
+}
+
+article h6 {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+}
+
+article code {
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+article img {
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+}
+
+article blockquote {
+  margin: 1rem 0 1rem 0;
+  padding: 0.5rem 1rem;
+  border-left: 0.25rem solid #ccc;
+}
+
+article table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0 1rem 0;
+}
+
+article table th,
+article table td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
+
+article table th {
+  font-weight: bold;
+}
+
+article pre {
+  padding: 1rem 0 1rem 0;
+  overflow-x: auto;
+}
+
+article ul {
+  list-style: disc;
+  margin-left: 1rem;
+}
+
+article ol {
+  list-style: decimal;
+  margin-left: 1rem;
+}
