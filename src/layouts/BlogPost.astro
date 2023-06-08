@@ -9,7 +9,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
 <Layout title={title} description={description}>
-	<article>
+	<article class="article-md">
 		<h1 class="text-3xl font-bold my-4">{title}</h1>
 		<FormattedDate date={pubDate} />
 		<img src={heroImage} alt="hero image" class="w-full my-4" />
