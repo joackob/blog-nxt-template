@@ -113,3 +113,12 @@ inline $E = mc^2$ or in a block
 $$
 \frac{d\vec p_1}{dt} +\frac{d\vec p_2}{dt} = 0\\
 $$
+
+$$
+\begin{split}
+\sum \vec F &= m\vec a\\
+&= m \frac{d\vec v}{dt}\\
+&= \frac{d(m\vec v)}{dt}\\
+ &= \frac{d\vec p}{dt}
+\end{split}
+$$
