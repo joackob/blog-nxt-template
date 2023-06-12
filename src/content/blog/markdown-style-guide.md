@@ -111,5 +111,5 @@ Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and ot
 inline $E = mc^2$ or in a block
 
 $$
-1+1
+\frac{d\vec p_1}{dt} +\frac{d\vec p_2}{dt} = 0\\
 $$
